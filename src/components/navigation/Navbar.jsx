@@ -10,7 +10,7 @@ const NavItem = ({ text, href, dropdown = [] }) => {
   return (
     <div className="relative" onMouseLeave={() => setIsOpen(false)}>
       <div 
-        className="px-3 py-2 text-sm font-medium text-gray-800 hover:text-primary-500 cursor-pointer flex items-center"
+        className="px-3 py-2 text-xl font-bold text-primary-500 hover:text-primary-500 cursor-pointer flex items-center"
         onMouseEnter={() => dropdown.length > 0 && setIsOpen(true)}
         onClick={() => dropdown.length > 0 && setIsOpen(!isOpen)}
       >
@@ -116,8 +116,8 @@ const Navbar = () => {
           <div className="hidden md:flex md:items-center md:space-x-4">
             {currentUser ? (
               <div className="flex items-center space-x-4">
-                <Link to="/profile" className="text-sm font-medium text-gray-800 hover:text-primary-500">
-                  <User className="h-5 w-5" />
+                <Link to="/profile" className="text-4xl text-blue-600 font-bold hover:text-primary-500">
+                  <User className="h-8 w-8" />
                 </Link>
                 <button 
                   onClick={handleLogout}

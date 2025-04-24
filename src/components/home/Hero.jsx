@@ -70,7 +70,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
               Bridging the Skills Gap in
               <span className="block mt-2 text-primary-300">
                 <TypeAnimation

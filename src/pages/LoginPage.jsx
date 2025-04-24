@@ -14,8 +14,8 @@ const LoginPage = () => {
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
       {/* Background Image Side */}
-      <div className="hidden md:flex md:w-1/2 bg-cover bg-center bg-no-repeat relative" style={{ 
-        backgroundImage: "url('https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')" 
+      <div className="hidden md:flex bg-cover bg-center bg-no-repeat relative" style={{ 
+        backgroundImage: "url('https://i.postimg.cc/PfgcqdmL/zizi-web.jpg')" 
       }}>
         <div className="absolute inset-0 bg-primary-900 opacity-70"></div>
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-white px-8">
