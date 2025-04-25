@@ -46,7 +46,7 @@ const AboutPage = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <div className="bg-primary-500 text-white pt-24 pb-12">
+      <div className="bg-white text-white pt-24 pb-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             className="text-center"
@@ -57,7 +57,7 @@ const AboutPage = () => {
             <h1 className="text-4xl font-display font-bold sm:text-5xl">
               About Zizi
             </h1>
-            <p className="mt-4 text-xl text-primary-100 max-w-3xl mx-auto">
+            <p className="mt-4 text-xl text-primary-600 max-w-3xl mx-auto">
               Bridging the skills gap in hospitality and tourism through innovative technology and industry partnerships
             </p>
           </motion.div>
@@ -107,9 +107,9 @@ const AboutPage = () => {
           </div>
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src="https://i.postimg.cc/PfgcqdmL/zizi-web.jpg"
               alt="Team collaboration"
-              className="rounded-lg shadow-lg"
+              className="rounded-lg h-74 shadow-lg"
             />
           </div>
         </motion.div>

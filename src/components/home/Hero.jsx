@@ -8,8 +8,8 @@ const Hero = () => {
   const [currentVideo, setCurrentVideo] = useState(0);
 
   const videos = [
-    "https://videos.pexels.com/video-files/2355823/2355823-sd_640_360_30fps.mp4",
-    "https://videos.pexels.com/video-files/9432067/9432067-uhd_2560_1440_24fps.mp4"
+    "https://videos.pexels.com/video-files/8566672/8566672-sd_640_360_30fps.mp4",
+    "https://videos.pexels.com/video-files/11782814/11782814-sd_640_360_30fps.mp4"
   ];
 
   useEffect(() => {

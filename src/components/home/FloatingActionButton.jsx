@@ -61,7 +61,7 @@ const FloatingActionButton = () => {
   if (!scrolled) return null;
 
   return (
-    <div className="fixed right-6 bottom-6 z-40">
+    <div className="fixed right-6 bottom-16 z-40">
       <AnimatePresence>
         {isOpen && (
           <motion.div

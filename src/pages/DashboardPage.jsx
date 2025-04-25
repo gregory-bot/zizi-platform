@@ -388,11 +388,11 @@ const DashboardPage = () => {
                   <h3 className="text-lg font-medium text-gray-900">Quick Actions</h3>
                 </div>
                 <div className="px-6 py-5 space-y-3">
-                  <a href="#" className="flex items-center text-primary-600 hover:text-primary-800">
+                  <a href="/institutions/analytics" className="flex items-center text-primary-600 hover:text-primary-800">
                     <PieChart className="h-5 w-5 mr-2" />
                     View Full Analytics
                   </a>
-                  <a href="#" className="flex items-center text-primary-600 hover:text-primary-800">
+                  <a href="/institutions/upload" className="flex items-center text-primary-600 hover:text-primary-800">
                     <Database className="h-5 w-5 mr-2" />
                     Upload New Curriculum
                   </a>

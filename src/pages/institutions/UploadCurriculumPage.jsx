@@ -2,8 +2,6 @@ import React, { useState, useRef } from 'react';
 import { useDropzone } from 'react-dropzone';
 import Navbar from '../../components/navigation/Navbar';
 import { Upload, Mic, Link as LinkIcon, X, Play, Pause, Send } from 'lucide-react';
-import Webcam from 'react-webcam';
-import Chatbot from 'react-chatbot-kit';
 
 function UploadCurriculumPage() {
   const [files, setFiles] = useState([]);
@@ -111,28 +109,31 @@ function UploadCurriculumPage() {
       <Navbar />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
-        <div className="bg-white shadow-soft rounded-lg p-8">
-          <h1 className="text-3xl font-display font-bold text-gray-900 mb-6">
+        <div className="bg-white shadow-soft rounded-lg p-4 sm:p-6 lg:p-8">
+          <h1 className="text-2xl sm:text-3xl font-display font-bold text-gray-900 mb-4 sm:mb-6">
             Upload Curriculum Content
           </h1>
 
           {/* File Upload Section */}
-          <div className="mb-8">
+          <div className="mb-6 sm:mb-8">
+            <h2 className="text-lg font-semibold mb-4">Upload Files</h2>
             <div
               {...getRootProps()}
-              className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center hover:border-primary-500 transition-colors cursor-pointer"
+              className="border-2 border-dashed border-gray-300 rounded-lg p-6 sm:p-8 text-center hover:border-primary-500 transition-colors cursor-pointer"
             >
               <input {...getInputProps()} />
-              <Upload className="mx-auto h-12 w-12 text-gray-400 mb-4" />
-              <p className="text-gray-600">Drag and drop files here, or click to select files</p>
-              <p className="text-sm text-gray-500 mt-2">
+              <Upload className="mx-auto h-10 w-10 sm:h-12 sm:w-12 text-gray-400 mb-4" />
+              <p className="text-gray-600 text-sm sm:text-base">
+                Drag and drop files here, or click to select files
+              </p>
+              <p className="text-xs sm:text-sm text-gray-500 mt-2">
                 Support for documents, images, videos, and audio files
               </p>
             </div>
 
             {/* File Preview */}
             {files.length > 0 && (
-              <div className="mt-4 grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {files.map((file, index) => (
                   <div key={index} className="relative group">
                     <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden bg-gray-100">
@@ -161,9 +162,9 @@ function UploadCurriculumPage() {
           </div>
 
           {/* Voice Recording Section */}
-          <div className="mb-8">
+          <div className="mb-6 sm:mb-8">
             <h2 className="text-lg font-semibold mb-4">Voice Recording</h2>
-            <div className="flex items-center space-x-4">
+            <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
               <button
                 onClick={isRecording ? stopRecording : startRecording}
                 className={`flex items-center px-4 py-2 rounded-md ${
@@ -188,9 +189,9 @@ function UploadCurriculumPage() {
           </div>
 
           {/* Link Sharing Section */}
-          <div className="mb-8">
+          <div className="mb-6 sm:mb-8">
             <h2 className="text-lg font-semibold mb-4">Add External Links</h2>
-            <div className="flex items-center space-x-2">
+            <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-2">
               <input
                 type="url"
                 value={newLink}
@@ -248,7 +249,7 @@ function UploadCurriculumPage() {
 
           {/* Chatbot */}
           {showChatbot && (
-            <div className="fixed bottom-6 right-6 w-96 bg-white rounded-lg shadow-xl">
+            <div className="fixed bottom-4 right-4 w-80 sm:w-96 bg-white rounded-lg shadow-xl">
               <div className="p-4 border-b border-gray-200 flex justify-between items-center">
                 <h3 className="font-semibold">Help Assistant</h3>
                 <button
@@ -258,7 +259,7 @@ function UploadCurriculumPage() {
                   <X className="h-5 w-5" />
                 </button>
               </div>
-              <div className="h-96 overflow-y-auto p-4">
+              <div className="h-72 sm:h-96 overflow-y-auto p-4">
                 {/* Chatbot content will be rendered here */}
               </div>
             </div>
